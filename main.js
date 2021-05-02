@@ -17,19 +17,34 @@ const rockPaperScissors = (hand1, hand2) => {
   // Write code here
   // Use the unit test to see what is expected
 
+
   if(hand1 === hand2) {
     return "It's a tie!"
   }
-  if(hand2 === 'rock' && hand2 === 'paper'){
-    return "Hand two wins!"
-  } else if (hand1 === 'paper' && hand2 === 'scissors') {
-    return "Hand two wins!"
+  if(hand1 === 'paper' && hand2 === 'rock'){
+    return "Hand one wins!"
+  } 
+  else if (hand1 === 'scissors' && hand2 === 'paper') {
+    return "Hand one wins!"
   }
   else if (hand1 === 'rock' && hand2 === 'scissors') {
+    return "Hand one wins!"
+  }
+
+
+  else if(hand2 === 'paper' && hand1 === 'rock'){
+    return "Hand two wins!"
+  } 
+  else if (hand2 === 'scissors' && hand1 === 'paper') {
+    return "Hand two wins!"
+  }
+  else if (hand2 === 'rock' && hand1 === 'scissors') {
     return "Hand two wins!"
   }
 
+
 }
+
 
 //last test use the string method trim() along with the string method toLowercase();
 
